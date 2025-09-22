@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Basics</title>
+  </head>
+  <body>
+    <h1>HTML Basics</h1>
+    <h3>This guide will help you in learning the basics of HTML and CSS. Most of the stuff in this tutorial is not the only correct way to do it, just the way that I do it.</h3>
+    
+    <h2>What is HTML?</h2>
+    <p>HTML stands for HyperText Markup Language. Contrary to popular belief, it is not a programming language. Programming languages are designed to instruct a computer to perform specific tasks, often involving logic, algorithms, and data manipulation (e.g., loops, conditional statements, variables). Markup languages, on the other hand, are used to structure and present content.</p>
+    
+    <h2>What is CSS?</h2>
+    <p>CSS stands for Cascading Style Sheets. CSS's primary purpose is to define the presentation and styling of documents written in a markup language like HTML. It describes how content should look (colors, fonts, layout).</p>
+    
+    <h2>How to use HTML</h2>
+    <p>For this part of the guide, you can follow along in another tab. First, go to <a href="https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/">https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/</a>, scroll down a little, and copy the chunk of html. This is some simple boilerplate HTML. Boilerplate means starter code, or a template. Next, go to <a href="https://github.com">Github</a>, and make an account. Then make a new repo, or repository. This will contain all of the HTML for your website.</p>
+    <p>Next, we will go line by line through the boilerplate HTML to explain everything, and hopefully make HTML a little easier to understand.</p>
+
+    <h3>Line 1, <code>&lt;!DOCTYPE html&gt;</code></h3>
+    <p><code>&lt;!DOCTYPE html&gt;</code> is the required document type declaration at the top of an HTML document that tells web browsers to render the page according to HTML5 standards, ensuring consistent display across different browsers. It's not an HTML tag but an instruction that specifies the document's markup language version, allowing the browser to correctly interpret and layout the content.</p>
+
+    <h3>Line 2, <code>&lt;html lang="en"&gt;</code></h3>
+    <p>The HTML lang attribute specifies the language of an element's content. When placed on the <code>&lt;html&gt;</code> element as <code>&lt;html lang="en"&gt;</code>, it declares that the primary language of the entire document is English.</p>
+
+    <h3>Line 3, <code>&lt;head&gt;</code></h3>
+    <p>The <code>&lt;head&gt;</code> element is a container for metadata (data about the document). It typically includes the page title, character encoding, links to stylesheets, scripts, and other meta-information that isn’t directly visible on the web page itself.</p>
+
+    <h3>Line 4, <code>&lt;meta charset="UTF-8"&gt;</code></h3>
+    <p>This meta tag defines the character encoding for the HTML document. <code>UTF-8</code> supports almost all characters from all human languages, making it a safe and universal choice for modern websites. It helps prevent display issues with special characters and symbols.</p>
+
+    <h3>Line 5, <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></h3>
+    <p>This line is essential for responsive web design. It tells the browser to set the width of the page to the width of the device's screen and sets the initial zoom level to 1.0. This makes your page more mobile-friendly and prevents it from appearing zoomed out on phones and tablets.</p>
+
+    <h3>Line 6, <code>&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</code></h3>
+    <p>This tag is used to force Internet Explorer to use the latest rendering engine available (Edge), rather than falling back to an older, less standards-compliant version. It's mostly for compatibility with legacy versions of Internet Explorer.</p>
+
+    <h3>Line 7, <code>&lt;title&gt;HTML Basics&lt;/title&gt;</code></h3>
+    <p>This tag sets the title of the webpage, which appears in the browser tab and is also used as the default name when someone bookmarks your page. It helps both users and search engines understand what the page is about.</p>
+
+    <h3>Line 8, <code>&lt;/head&gt;</code></h3>
+    <p>This closes the <code>&lt;head&gt;</code> section. All metadata and links should go before this line.</p>
+
+    <h3>Line 9, <code>&lt;body&gt;</code></h3>
+    <p>This opens the body of the HTML document. All visible content (text, images, links, etc.) that you want to appear on the page goes inside this tag.</p>
+
+    <h3>Line 10, Inside the &lt;body&gt;…</h3>
+    <p>Here is where your actual page content lives. Things like <code>&lt;h1&gt;</code> for headings, <code>&lt;p&gt;</code> for paragraphs, and other HTML elements that present your content go here.</p>
+
+    <h3>Line 11, <code>&lt;script src="index.js"&gt;&lt;/script&gt;</code></h3>
+    <p>This line tells the browser to load and execute a JavaScript file named <code>index.js</code>. JavaScript adds interactivity and dynamic behavior to your page (like dropdowns, popups, or responding to user input). This line should go right before <code>&lt;/body&gt;</code> so that the HTML content loads first before the script runs.</p>
+
+    <h3>Final Line, <code>&lt;/body&gt;</code> and <code>&lt;/html&gt;</code></h3>
+    <p><code>&lt;/body&gt;</code> closes the visible content section, and <code>&lt;/html&gt;</code> closes the entire document. Everything that makes up your web page should be nested properly within these opening and closing tags.</p>
+
+    <p>Next, create a new file in the Github repo titled "index.html". Index tells the browser to load that page first, so index is good for things like home pages.</p>
+    <p>Now paste the boilerplate HTML that we copied earlier into index.html.</p>
+    <p>You can change the text inside the title tag to customize the text in the browser tab.</p>
+    <p>For this guide, I recommend removing the Javascript line (Line 11), as we don't have a seperate Javascript file that we will be linking.</p>
+    <p>You may notice that some lines start with a few spaces. This is called indentation, and helps to show what HTML is inside other HTML. It is 2 spaces per indent, or 1 press of the tab key.</p>
+    <p>Go into the body, make a new line, and type <code>&lt;/<h1>Test</h1>&gt;</code>.</p>
+    <p>Make sure it is indented once inside the body, showing that it is inside the body. h1 means header1. This is the biggest header. Going up in numbers like h2 makes the header smaller. It goes up to h6. You can replace "Test" with whatever text you want.</p>
+    <p>Now do the same thing, but with <code>&lt;/p&gt;</code>. This is a paragraph, and is smaller then a header.</p>
+  </body>
+</html>
